@@ -1,0 +1,425 @@
+/*
+Author: Marco Peterson
+Date: Jan 16th 2013
+CSCI 496
+*/
+
+
+/*----------------------------------------------------------------*/
+#header {
+  background:url(IEEE%20small.png) right no-repeat;
+}
+
+/*----------------------------------------------------------------*/
+/*Gerneral Styles*/
+
+h1 {font-family: Arial, Helvetica, Futura;}
+h1 {font-size:200%}
+h2 {font-family: symbol;}
+
+	
+}
+
+/*Sizes*/
+#X300 {font-size:300%;}
+#X250 {font-size:250%;}
+#X200 {font-size:200%;}
+#X150 {font-size:150%;}
+
+
+/*Alignment*/
+#Video_Left{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	/*border-style: dashed;
+	border-color: blue;*/
+}
+
+#Text_Center{text-align: center;}
+#Text_Left{text-align: left;}
+
+#Text_Area{
+	text-align: left;
+	font-size:200%;
+	width: 60%;
+	float: left;
+	
+	/*border-style: dashed;
+	border-color: purple;*/
+}
+
+#Text_Area_2{
+	text-align: left;
+	font-size:200%;
+	width: 40%;
+	float: left;
+	
+	/*border-style: dashed;
+	border-color: purple;*/
+}
+
+#Sub_Text_Area{
+	text-align: left;
+	font-size:200%;
+	width: 25%;
+	float: left;
+
+	
+	/*border-style: dashed;
+	border-color: red;*/
+}
+
+
+#canvasbox{
+	padding-top: 30px;
+	text-align: left;
+	font-size:200%;
+	width: 60%;
+	float: left;
+	
+	/*border-style: dashed;
+	border-color: purple;*/
+}
+
+
+	
+	
+a:link{color: orange;}
+a:visited{color: orange;}
+a:hover{color: white;}
+a:active{color: red;}
+
+* {font-size:100%}
+
+/*----------------------------------------------------------------*/
+#container{
+	width: 100%;
+	height: 100%;
+	min-height: 1700px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	/*font-size: 200%;*/
+	
+	/*border-style: dotted;
+	border-color: green;*/
+	}
+/*----------------------------------------------------------------*/
+
+#container_gray{
+	background-color: gray;
+	width: 100%;
+	height: 100%;
+	min-height: 1700px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	
+	/*font-size: 200%;*/
+	
+	/*border-style: dotted;
+	border-color: green;*/
+	}
+	
+/*------------------------------------------------------------------*/
+
+#Title{
+	width: 100%;
+	min-height: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	}
+	
+/*-------------------------------------------------------------------*/
+/*Horizontal navigation Bar */
+#Horizontal_navigation {
+position: float;
+top: 0;
+width: 100%;
+color: #FF8000;
+height: 0%;
+text-align: left;
+/*padding-top: 15px;*/
+padding-bottom: 15px;
+/* Adds shadow to the bottom of the bar */
+-webkit-box-shadow: 0px 0px 8px 0px #000000;
+-moz-box-shadow: 0px 0px 8px 0px #000000;
+box-shadow: 0px 0px 8px 0px #000000;
+/* Adds the transparent background */
+background-color: #FF8000;
+color: rgba(1, 1, 1, 0.8);
+
+/*border-style: dotted;
+border-color: yellow;*/
+}
+
+#Horizontal_navigation a {
+font-size: 45px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 15px;
+padding-bottom: 0;
+color: blue;
+text-decoration: none;
+}
+
+#Horizontal_navigation a:hover {color: white;}
+#Horizontal_navigation a.selected {color: white;}
+
+
+/*----------------------------------------------------------------*/
+
+* Main Navigation */
+#nav {
+	position:float;
+	width:100%;
+	margin:0 auto;
+	    margin-top:0;
+	    padding:10px;
+	}
+	 
+	ul#Horizontal_navigation {
+	    margin:0px auto;
+	    position:relative;
+	    float:left;
+	   
+	}
+	 
+	ul#Horizontal_navigation li {
+	    display:inline;
+	    font-size:45px;
+	    font-weight:bold;
+	    margin:0;
+	    padding:0;
+	    float:left;
+	    position:relative;
+	}
+	 
+	ul#Horizontal_navigation li a {
+	    padding:15px 45px;
+	    color:blue;
+	    text-shadow:1px 1px 0px #fff;
+	    text-decoration:none;
+	    display:inline-block;
+	    background: #FF8000;
+	     
+	   
+	}
+	 
+	ul#Horizontal_navigation li a:hover {
+	    background:##FF8000;
+	    color:#282828;
+	}
+	 
+	ul#Horizontal_navigation li a.first {
+	    border-left: 0 none;
+	}
+	 
+	ul#Horizontal_navigation li a.last {
+	    border-right: 0 none;
+	}
+	 
+	ul#Horizontal_navigation li:hover > a {
+	    background:#fff;
+	}
+	
+	
+	
+	/* Drop-Down Navigation */
+	ul#Horizontal_navigation li:hover > ul
+	{
+	/*these 2 styles are very important,
+	being the ones which make the drop-down to appear on hover */
+	    visibility:visible;
+	    opacity:1;
+	}
+	 
+	ul#Horizontal_navigation ul, ul#Horizontal_navigation ul li ul {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;   
+	/*the next 2 styles are very important,
+	being the ones which make the drop-down to stay hidden */
+	    visibility:hidden;
+	    opacity:0;
+	    position: absolute;
+	    z-index: 99999;
+	    width:290px;
+	    background:#f8f8f8;
+	    box-shadow:1px 1px 3px #ccc;
+	/* css3 transitions for smooth hover effect */
+	    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+	    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+	    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+	    transition:opacity 0.2s linear, visibility 0.2s linear;    
+	}
+	 
+	ul#Horizontal_navigation ul {
+	    top: 85px;
+	    left: 1px;
+	}
+	 
+	ul#Horizontal_navigation ul li ul {
+	    top: 0;
+	    left: 280px; /* strong related to width:180px; from above */
+	}
+	 
+	ul#Horizontal_navigation ul li {
+	    clear:both;
+	    width:100%;
+	    border:0;
+	    border-bottom:1px solid #c9c9c9;
+	}
+	 
+	ul#Horizontal_navigationul li a {
+	    background:none;
+	    padding:7px 15px;
+	    color:blue;
+	    text-shadow:1px 1px 0px #fff;
+	    text-decoration:none;
+	    display:inline-block;
+	    border:0 none;
+	    float:left;
+	    clear:both;
+	    width:150px;
+	}
+	
+
+
+/*----------------------------------------------------------------*/
+
+/*Content */
+#content {
+	width: 100%;
+	min-height: 1400px;
+
+	
+	/* for design preview */
+	/*border-style: dotted;
+	border-color: orange;*/
+}
+
+ul {list-style-type: none;}
+li {list-style-type: none;}
+
+/*----------------------------------------------------------------*/
+
+#Members_1{
+	float: left;
+	width: 35%;
+	min-height: 500px;
+	
+	
+	/* for design preview */
+	/*border-style: dashed;
+	border-color: red;*/
+}
+
+#Members_1 li{
+	text-align: top;
+	
+	/*border-style: dashed;
+	border-color: green;*/
+}
+
+
+/*----------------------------------------------------------------*/
+
+#Members_2{
+	float: left;
+	width: 25%;
+	min-height: 500px;
+	
+	
+	/* for design preview */
+	/*border-style: dashed;
+	border-color: red;*/
+}
+
+/*----------------------------------------------------------------*/
+
+#Teacher{
+
+
+}
+
+/*----------------------------------------------------------------*/
+
+/*External links */
+#External_links {
+	float: right;
+	float: top;
+	width: 18%;
+	min-height: 900px;
+	background-color: #0101DF;
+	
+	
+	/* for design preview */
+	/*border-style: dotted;
+	border-color: purple;
+	min-height: 900px;
+	display: inline;*/
+	
+}
+
+#External_links li{
+	list-style-type: none;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 23px;
+	padding-right: 23px;
+	
+	/*border-style: dashed;
+	border-color: red;*/
+	min-height: 40px;
+	}
+	
+
+#External_links h1{
+	text-align: center;
+	font-size:250%
+	}
+	
+
+#External_links a{
+font-size: 150%;
+}
+
+/*----------------------------------------------------------------*/
+
+#footer
+{
+	width: 100%;
+	text-align: center;	
+	/* for design preview */
+	/*border-style: dashed;
+	border-color: blue;*/
+	min-height: 50px;
+}
+
+#footer-main
+{
+	width: 100%;
+	text-align: center;	
+
+	/* for design review */
+	/*border-style: dashed;
+	border-color: red;*/
+	min-height: 40px;
+}
+
+#footer-declaration
+{
+	width: 100%;
+	
+	/* for design review */
+	/*border-style: dashed;
+	border-color: blue;*/
+	min-height: 10px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--Author: Marco Peterson-->
+<!--Date: Feb 13th 2013-->
+<!--CSCI 496-->
+
+<html lang="en">
+<head>
+	<meta charset="utf=8"/>
+	<script type="text/javascript"  src="PictureFade.js" >
+	</script>
+	<title>IEEE competition Website Main</title>
+	<link rel="stylesheet" type="text/css" href="IEEE.css"/>
+	
+	
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:500,
+				preset:'fade',
+				pagination:true,//'.pagination',true,'<ul></ul>'
+				pagNums:false,
+				slideshow:8000,
+				numStatus:false,
+				banners:'fromBottom',// fromLeft, fromRight, fromTop, fromBottom
+				waitBannerAnimation:false,
+				progressBar:false
+			})
+			
+	 	}) 
+		$(function(){
+		  if($(window).width() <= 1066)
+			{
+			  $("#slider .prev").css("left", "55px")
+			  $("#slider .next").css("right", "55px")
+			}
+		})
+	</script>
+	
+	
+	
+</head>
+
+<body onload="init();">
+	<div id="container_gray">
+		<div id="header">
+			<h1 id="X250"> Virginia State University IEEE and ACM</h1>
+		</div>
+	
+		<!--Horizontal Nav Bar-->
+		<nav id="nav">	
+		<div id="Horizontal_navigation">
+			
+			<ul id="Horizontal_navigation">
+				<li><a href="IEEE_Main.html"> Home &raquo;</a>
+					
+						<ul>
+							<li><a href="IEEE_login.html">Login</a></li>
+						</ul>
+				</li>	
+				<li><a href="IEEE_Rockets.html"> Rockets</a></li>
+				<li><a class="selected" href="IEEE_Robotics.html"> Robotics</a></li>
+			</ul>
+		</div>
+		</nav>
+		
+		
+		
+		<div id="content">
+		<!--
+			<div id = "canvasbox">
+				<canvas id="canvas" height="400"  width="600">
+				Your browser does not support the canvas element 
+				</canvas>
+			</div>
+		-->	
+			
+		<div id="canvasbox">
+			<div id="slider">
+				<div class="slider-block">
+					<div class="slider">
+						<ul class="items">
+							<li><img src="b1.jpg" alt="" /><div class="banner"><div><span>Robotics Team</span><strong>VSU</strong><p>Robotics Team as it propares to Compete at ARTSI 2013</div></div></li>
+				  
+							<li><img src="b2.jpg" alt="" /><div class="banner"><div><span>ARTSI 3013</span><strong>In Transit</strong><p> Bio </div></div></li>
+							
+							<li><img src="b7.jpg" alt="" /><div class="banner"><div><span>Team Members</span><strong>Davonte and Hope</strong><p> Bio </div></div></li>
+				  
+							<li><img src="b10.jpg" alt="" /><div class="banner"><div><span>Dr Wang</span><strong>Instuction Time</strong><p> Bio </div></div></li>
+							
+							<li><img src="b14.jpg" alt="" /><div class="banner"><div><span>3rd Place Finish</span><strong>ARTSI 2013</strong><p> Bio </div></div></li>
+							
+							
+						</ul>
+					</div>
+					<a href="#" class="prev"></a>
+					<a href="#" class="next"></a>
+				</div>
+			</div>
+		</div>	
+	
+			<!--External Links-->
+			<div id="External_links">
+				<h1>External Links</h1>
+				<ul>
+					<li><a href="http://sest.vsu.edu/~hchen/album/ARTSI2013/">VSU ARTSI Web Page</a></li>
+					<li><a href="http://artsialliance.org/"> ARTSI Web Page</a></li>
+					<li><a href="#"> External Link 3</a></li>
+				</ul>
+			</div>
+		
+		
+			<div id="Members_1">
+				<li id="X200">Robotis Team Members
+					<ul id="X150">
+						<li>Dani Mason</li>
+						<li>Devante Holmes</li>
+						<li>Name here</li>
+						<li>Name here</li>
+					</ul>
+				</li>
+			</div>
+		</div>
+	
+		<div id="footer">
+				<div id="footer-main">
+					<p>Web Site Created By Marco Peterson</p>
+				</div>
+				<div id="footer-declaration">
+				</div>
+		</div>
+	</div>
+</body>
+</html>
